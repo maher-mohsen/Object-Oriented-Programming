@@ -1,0 +1,80 @@
+// Float Array
+
+elements , size , cnt , << 
+>> ( element by element )  [ f(0,s,tab,float) ]
+newline 
+do opeartion 
+write 
+<< ( element by element )  [ size , '|' , f(0,s,tab,float) ]
+newline 
+destructor 
+
+
+// Sorted Array
+
+
+inherits from float 
+adds a float at the right place in the array
+shifting () - if(<=) put here , shift other  | else() , put after
+array remains sorted with every add [process done within the virtual add of this class ]
+add method takes an integer/float ( element by element )
+add called inside extraction overlaoding 
+
+
+// Front Array
+
+inherits from float 
+adds a float at the front place in the array
+1. formula 
+	f( i(0,n-1) , arr[n-1-i] = value ) 
+2. shifting()
+	if(null) put , else() shift , put 
+3. even , odd  swaping()
+
+add method takes an integer/float ( element by element )
+add called inside extraction overlaoding 
+
+
+
+//  Positive Array 
+
+inherits from sorted
+1 . add_+ve ( value ) {
+	if(true) -> add_sorted ( value )  
+  }
+	// friended method 
+
+	// add_+ve -> virtual 
+    	   base :: add ( value ) ; 
+
+1 . out to file till before the null element 
+2 . out to file till i 
+3 . do ( resize( arr -> minmize ) , change( n -> i+1 ) )  
+
+
+// Negative Array 
+
+same put inverted commands if(!)
+
+
+// input 
+	from file 
+// output 
+	to file 
+// Main 
+	1. take input ( in_file_name , out_file_name )
+	2. for ( i(0,9) , allocate using polymorphishm each iterate ) {
+		string , int from file 
+		new x -> x is determiend by the first string in line 
+		take string  -> determine the type of new allocation 
+		file_in  >> *object ; // use the extraction 
+		file_out << *object ; // use the insertion 
+	}
+
+
+	Don’t forgot to deallocate by deleting your objects in main after
+	finishing.
+
+
+
+
